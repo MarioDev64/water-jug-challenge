@@ -15,10 +15,10 @@ describe('Water Jug Challenge', () => {
     fireEvent.click(screen.getByText(/Solve/i));
 
     const expectedSteps = [
-      { x: 2, y: 0, explanation: 'Fill X' },
-      { x: 0, y: 2, explanation: 'Transfer from X to Y' },
-      { x: 2, y: 2, explanation: 'Fill X' },
-      { x: 0, y: 4, explanation: 'Transfer from X to Y' },
+      { x: 2, y: 0, explanation: 'Fill bucket X' },
+      { x: 0, y: 2, explanation: 'Transfer from bucket X to bucket Y' },
+      { x: 2, y: 2, explanation: 'Fill bucket X' },
+      { x: 0, y: 4, explanation: 'Transfer from bucket X to bucket Y' },
     ];
 
     for (const step of expectedSteps) {
@@ -42,10 +42,10 @@ describe('Water Jug Challenge', () => {
     fireEvent.click(screen.getByText(/Solve/i));
 
     const expectedSteps = [
-      { x: 0, y: 100, explanation: 'Fill Y' },
-      { x: 2, y: 98, explanation: 'Transfer from Y to X' },
-      { x: 0, y: 98, explanation: 'Empty X' },
-      { x: 2, y: 96, explanation: 'Transfer from Y to X' },
+      { x: 0, y: 100, explanation: 'Fill bucket Y' },
+      { x: 2, y: 98, explanation: 'Transfer from bucket Y to bucket X' },
+      { x: 0, y: 98, explanation: 'Empty bucket X' },
+      { x: 2, y: 96, explanation: 'Transfer from bucket Y to bucket X' },
     ];
 
     for (const step of expectedSteps) {
