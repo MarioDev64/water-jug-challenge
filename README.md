@@ -33,7 +33,7 @@ Make sure you have the following installed on your machine:
   # or
   yarn install
   ```
-  
+
 ### Running project
   ```bash
   npm run dev
@@ -42,6 +42,13 @@ Make sure you have the following installed on your machine:
   ```
     
 Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+### Running tests
+  ```bash
+  npm run test
+  # or
+  yarn test
+  ```
 
 ### Contributing
   Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
